@@ -1,8 +1,8 @@
 version 3
-run General-0-20241225-05:19:31-69900
+run General-0-20241225-05:33:37-34976
 attr configname General
-attr datetime 20241225-05:19:31
-attr datetimef 20241225-051931
+attr datetime 20241225-05:33:37
+attr datetimef 20241225-053337
 attr experiment General
 attr inifile omnetpp.ini
 attr iterationvars ""
@@ -10,7 +10,7 @@ attr iterationvarsd ""
 attr iterationvarsf ""
 attr measurement ""
 attr network projbgddd.Network
-attr processid 69900
+attr processid 34976
 attr repetition 0
 attr replication #0
 attr resultdir results

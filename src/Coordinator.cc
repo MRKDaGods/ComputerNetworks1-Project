@@ -24,7 +24,7 @@ void Coordinator::initialize()
 
     // params
     int nodeId;
-    int startTime;
+    double startTime;
 
     config >> nodeId >> startTime;
 
