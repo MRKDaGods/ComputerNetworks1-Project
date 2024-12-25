@@ -1,0 +1,237 @@
+At : 0.00, Node : 0, Introducing channel error with code = 0000
+
+At : 0.50, Node : 0, [sent] frame with seq_num : 0 and payload = $aaaa$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 0.50, Node : 0, Introducing channel error with code = 0000
+
+At : 1.00, Node : 0, [sent] frame with seq_num : 1 and payload = $b/$bbb$ and
+trailer = 1011, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 1.00, Node : 0, Introducing channel error with code = 0000
+
+At : 1.50, Node : 0, [sent] frame with seq_num : 2 and payload = $ccc/$/$c$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 1.50, Node : 0, Introducing channel error with code = 0000
+
+At : 1.50 Node : 1 Received packet with seqNum : 0, payload = aaaa
+
+At : 2.00, Node : 0, [sent] frame with seq_num : 3 and payload = $d///$ddd$ and
+trailer = 1011, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 2.00 Node : 1 Received packet with seqNum : 1, payload = b$bbb
+
+At time : 2.00 Node : 1 Sending ACK with number : 0, loss : NO
+
+At : 2.50 Node : 1 Received packet with seqNum : 2, payload = ccc$$c
+
+At time : 2.50 Node : 1 Sending ACK with number : 1, loss : NO
+
+At : 3.00 Node : 1 Received packet with seqNum : 3, payload = d/$ddd
+
+At : 3.00, Node : 0, Introducing channel error with code = 0000
+
+At time : 3.00 Node : 1 Sending ACK with number : 2, loss : NO
+
+At : 3.50, Node : 0, Introducing channel error with code = 0100
+
+At time : 3.50 Node : 1 Sending ACK with number : 3, loss : NO
+
+At : 3.50, Node : 0, [sent] frame with seq_num : 0 and payload = $/$eeee/$$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 4.00, Node : 0, Introducing channel error with code = 1000
+
+At : 4.00, Node : 0, [sent] frame with seq_num : 1 and payload = $aa$ and
+trailer = 0000, Modified = -1, Lost = YES, Duplicate = 0, Delay = 0.00
+
+At : 4.50, Node : 0, Introducing channel error with code = 0000
+
+At : 4.50 Node : 1 Received packet with seqNum : 0, payload = $eeee$
+
+At : 4.50, Node : 0, [sent] frame with seq_num : 2 and payload = $bb& and
+trailer = 0000, Modified = 25, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 5.00, Node : 0, [sent] frame with seq_num : 3 and payload = $cc$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At time : 5.00 Node : 1 Sending ACK with number : 0, loss : NO
+
+At : 5.50 Node : 1 Received packet with seqNum : 2, payload = bb
+
+At : 6.00 Node : 1 Received packet with seqNum : 3, payload = cc
+
+At : 6.00, Node : 0, Introducing channel error with code = 0001
+
+At : 6.50, Node : 0, [sent] frame with seq_num : 0 and payload = $dd$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 4.00
+
+At : 11.50 Node : 1 Received packet with seqNum : 0, payload = dd
+
+Time out event at time : 14.00, Node : 0, for frame with seq_num = 1
+
+At : 14.50, Node : 0, [sent] frame with seq_num : 1 and payload = $aa$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 15.00, Node : 0, [sent] frame with seq_num : 2 and payload = $jb$ and
+trailer = 0000, Modified = 11, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 15.50, Node : 0, [sent] frame with seq_num : 3 and payload = $cc$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 15.50 Node : 1 Received packet with seqNum : 1, payload = aa
+
+At : 16.00, Node : 0, [sent] frame with seq_num : 0 and payload = $dd$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 4.00
+
+At : 16.00 Node : 1 Received packet with seqNum : 2, payload = jb
+
+At time : 16.00 Node : 1 Sending ACK with number : 1, loss : NO
+
+At : 16.50 Node : 1 Received packet with seqNum : 3, payload = cc
+
+At time : 16.50 Node : 1 Sending NACK with number : 2, loss : NO
+
+At : 17.00, Node : 0, Introducing channel error with code = 0100
+
+At : 17.50, Node : 0, [received] NACK for seq_number : 2
+
+At : 17.50, Node : 0, [sent] frame with seq_num : 1 and payload = $ee$ and
+trailer = 0000, Modified = -1, Lost = YES, Duplicate = 0, Delay = 0.00
+
+At : 21.00 Node : 1 Received packet with seqNum : 0, payload = dd
+
+Time out event at time : 25.00, Node : 0, for frame with seq_num = 2
+
+At : 25.50, Node : 0, [sent] frame with seq_num : 2 and payload = $bb$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 26.00, Node : 0, [sent] frame with seq_num : 3 and payload = $cc$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 26.50, Node : 0, [sent] frame with seq_num : 0 and payload = $dd$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 4.00
+
+At : 26.50 Node : 1 Received packet with seqNum : 2, payload = bb
+
+At : 27.00, Node : 0, [sent] frame with seq_num : 1 and payload = $ee$ and
+trailer = 0000, Modified = -1, Lost = YES, Duplicate = 0, Delay = 0.00
+
+At : 27.00 Node : 1 Received packet with seqNum : 3, payload = cc
+
+At time : 27.00 Node : 1 Sending ACK with number : 2, loss : NO
+
+At time : 27.50 Node : 1 Sending ACK with number : 3, loss : NO
+
+At : 28.00, Node : 0, Introducing channel error with code = 0000
+
+At : 28.50, Node : 0, Introducing channel error with code = 0000
+
+At : 28.50, Node : 0, [sent] frame with seq_num : 2 and payload = $ta$ and
+trailer = 0101, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 29.00, Node : 0, [sent] frame with seq_num : 3 and payload = $tb$ and
+trailer = 0110, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 29.50 Node : 1 Received packet with seqNum : 2, payload = ta
+
+At : 30.00 Node : 1 Received packet with seqNum : 3, payload = tb
+
+At : 31.50 Node : 1 Received packet with seqNum : 0, payload = dd
+
+At time : 32.00 Node : 1 Sending ACK with number : 0, loss : NO
+
+At : 33.00, Node : 0, Introducing channel error with code = 0000
+
+At : 33.50, Node : 0, [sent] frame with seq_num : 0 and payload = $tc$ and
+trailer = 0111, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 34.50 Node : 1 Received packet with seqNum : 0, payload = tc
+
+Time out event at time : 37.00, Node : 0, for frame with seq_num = 1
+
+At : 37.50, Node : 0, [sent] frame with seq_num : 1 and payload = $ee$ and
+trailer = 0000, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 38.00, Node : 0, [sent] frame with seq_num : 2 and payload = $ta$ and
+trailer = 0101, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 38.50, Node : 0, [sent] frame with seq_num : 3 and payload = $tb$ and
+trailer = 0110, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 38.50 Node : 1 Received packet with seqNum : 1, payload = ee
+
+At : 39.00, Node : 0, [sent] frame with seq_num : 0 and payload = $tc$ and
+trailer = 0111, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 39.00 Node : 1 Received packet with seqNum : 2, payload = ta
+
+At time : 39.00 Node : 1 Sending ACK with number : 1, loss : NO
+
+At : 39.50 Node : 1 Received packet with seqNum : 3, payload = tb
+
+At time : 39.50 Node : 1 Sending ACK with number : 2, loss : NO
+
+At : 40.00 Node : 1 Received packet with seqNum : 0, payload = tc
+
+At : 40.00, Node : 0, Introducing channel error with code = 0011
+
+At time : 40.00 Node : 1 Sending ACK with number : 3, loss : NO
+
+At : 40.50, Node : 0, Introducing channel error with code = 1010
+
+At time : 40.50 Node : 1 Sending ACK with number : 0, loss : NO
+
+At : 40.50, Node : 0, [sent] frame with seq_num : 1 and payload = $fa$ and
+trailer = 0111, Modified = -1, Lost = NO, Duplicate = 1, Delay = 4.00
+
+At : 40.60, Node : 0, [sent] frame with seq_num : 1 and payload = $fa$ and
+trailer = 0111, Modified = -1, Lost = NO, Duplicate = 2, Delay = 4.00
+
+At : 41.00, Node : 0, Introducing channel error with code = 1100
+
+At : 41.00, Node : 0, [sent] frame with seq_num : 2 and payload = $æb$ and
+trailer = 0100, Modified = 15, Lost = NO, Duplicate = 1, Delay = 0.00
+
+At : 41.10, Node : 0, [sent] frame with seq_num : 2 and payload = $æb$ and
+trailer = 0100, Modified = 15, Lost = NO, Duplicate = 2, Delay = 0.00
+
+At : 41.50, Node : 0, [sent] frame with seq_num : 3 and payload = $fs$ and
+trailer = 0101, Modified = 20, Lost = YES, Duplicate = 0, Delay = 0.00
+
+At : 42.00 Node : 1 Received packet with seqNum : 2, payload = æb
+
+At : 42.10 Node : 1 Received packet with seqNum : 2, payload = æb
+
+At : 43.50, Node : 0, [received] NACK for seq_number : 2
+
+At : 44.00, Node : 0, [received] NACK for seq_number : 2
+
+At : 45.50 Node : 1 Received packet with seqNum : 1, payload = fa
+
+At : 45.60 Node : 1 Received packet with seqNum : 1, payload = fa
+
+At time : 46.00 Node : 1 Sending ACK with number : 1, loss : NO
+
+Time out event at time : 51.00, Node : 0, for frame with seq_num = 2
+
+At : 51.50, Node : 0, [sent] frame with seq_num : 2 and payload = $fb$ and
+trailer = 0100, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 52.00, Node : 0, [sent] frame with seq_num : 3 and payload = $&c$ and
+trailer = 0101, Modified = 14, Lost = YES, Duplicate = 0, Delay = 0.00
+
+At : 52.50 Node : 1 Received packet with seqNum : 2, payload = fb
+
+At time : 53.00 Node : 1 Sending ACK with number : 2, loss : NO
+
+Time out event at time : 62.00, Node : 0, for frame with seq_num = 3
+
+At : 62.50, Node : 0, [sent] frame with seq_num : 3 and payload = $fc$ and
+trailer = 0101, Modified = -1, Lost = NO, Duplicate = 0, Delay = 0.00
+
+At : 63.50 Node : 1 Received packet with seqNum : 3, payload = fc
+
+At time : 64.00 Node : 1 Sending ACK with number : 3, loss : NO
+
