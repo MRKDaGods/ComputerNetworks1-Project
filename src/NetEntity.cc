@@ -191,12 +191,13 @@ long NetEntity::GetAndUpdateProcessingDelay(long *preprocessDelay)
         m_NextSendTime = curTime;
     }
 
-    m_NextSendTime += m_Node->GetParams()->processingTime * 1000;
+    auto processingTime = m_Node->GetParams()->processingTime * 1000;
+    m_NextSendTime += processingTime;
     auto delay = m_NextSendTime - curTime;
 
     if (preprocessDelay)
     {
-        *preprocessDelay = _STD max(delay - 500, 0L);
+        *preprocessDelay = _STD max(delay - (long)processingTime, 0L);
     }
 
     return delay;
